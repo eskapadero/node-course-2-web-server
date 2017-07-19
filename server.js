@@ -50,6 +50,16 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/project',(req, res) => {
+     res.render('about.hbs',{
+         
+         pageTitle: 'This is where my project is ',
+        
+         
+     });
+    
+});
+
 app.get('/about',(req, res) => {
      res.render('about.hbs',{
          
@@ -63,7 +73,7 @@ app.get('/about',(req, res) => {
 app.get('/bad',(req, res) => {
      res.send({
          error: 'Unable to reach!'
-         
+            
          
      });
     
